@@ -6,7 +6,7 @@ import sqlite3
 
 NOTA_APROBACION = 51
 
-
+# fvvfvfvfvf
 def calcular_promedio(notas):
     if not notas:
         raise ValueError("No se puede calcular el promedio de una lista vacía")

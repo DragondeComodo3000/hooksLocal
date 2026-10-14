@@ -1,0 +1,18 @@
+2026-10-14 16:58:29 | Bash               | rg --files -g 'AGENTS.md' -g '!node_modules'
+2026-10-14 16:58:29 | Bash               | git remote -v
+2026-10-14 16:58:29 | Bash               | git log -1 --oneline
+2026-10-14 16:58:30 | Bash               | git status --short --branch
+2026-10-14 16:58:35 | Bash               | rg --files -g '.gitignore' -g 'README*' -g 'pyproject.toml' -g 'pytest.ini' -g 'requirements*.txt'
+2026-10-14 16:58:35 | Bash               | git diff -- .claude/auditoria.log .codex/hooks.json .claude/settings.json hooks/verificar_push.py .github/workflows/test
+2026-10-14 16:58:35 | Bash               | git status --short --untracked-files=all
+2026-10-14 16:58:35 | Bash               | git diff --stat && git diff --check
+2026-10-14 16:58:44 | Bash               | git config --get core.autocrlf; git config --get core.safecrlf; git config --get core.eol
+2026-10-14 16:58:44 | Bash               | python3 -B -m unittest discover -s tests -v
+2026-10-14 16:58:44 | Bash               | git diff --ignore-space-at-eol --quiet; echo diff_exit:$?
+2026-10-14 16:58:44 | Bash               | wc -l .codex/auditoria.log .claude/auditoria.log; git rev-parse HEAD origin/main; git status --porcelain=v1 -uno
+2026-10-14 16:58:44 | Bash               | git diff --numstat | head -40
+2026-10-14 16:58:51 | Bash               | rg -n 'calcular_promedio|sum\(|sorted|mejores_estudiantes|reverse' proyecto-demo/notas.py
+2026-10-14 16:58:51 | Bash               | git ls-files -s hooks/__pycache__ .codex/auditoria.log .claude/auditoria.log
+2026-10-14 16:58:51 | Bash               | git diff -w --exit-code -- proyecto-demo/notas.py; echo diff_exit:$?
+2026-10-14 16:58:51 | Bash               | git show HEAD:proyecto-demo/notas.py | rg -n 'calcular_promedio|sum\(|sorted|mejores_estudiantes|reverse' 
+2026-10-14 16:58:51 | Bash               | git log --oneline -5; git branch -vv
